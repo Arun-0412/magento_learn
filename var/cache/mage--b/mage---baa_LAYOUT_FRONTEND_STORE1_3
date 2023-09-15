@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1689229090;s:6:"expire";i:9999999999;s:4:"tags";s:37:"baa_LAYOUT_GENERAL_CACHE_TAG,baa_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1690782368;s:6:"expire";i:9999999999;s:4:"tags";s:37:"baa_LAYOUT_GENERAL_CACHE_TAG,baa_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -799,14 +799,6 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1689229090;s:6:"expire";i:9999999999;s:4:"t
    </referenceBlock>
 </body>
 </handle><handle id="default"><body>
-   <block class="Magento\Framework\Pricing\Render" name="product.price.render.default">
-      <arguments>
-         <argument name="price_render_handle" xsi:type="string">catalog_product_prices</argument>
-         <argument name="use_link_for_as_low_as" xsi:type="boolean">true</argument>
-      </arguments>
-   </block>
-</body>
-</handle><handle id="default"><body>
    <referenceContainer name="before.body.end">
       <block class="Magento\Catalog\Block\FrontendStorageManager" name="frontend-storage-manager" before="-" template="Magento_Catalog::frontend_storage_manager.phtml">
          <arguments>
@@ -863,6 +855,14 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1689229090;s:6:"expire";i:9999999999;s:4:"t
       <block class="Magento\Framework\View\Element\Js\Components" name="head.components" as="components" template="Magento_Catalog::js/components.phtml"/>
    </referenceContainer>
    <block class="Magento\Framework\View\Element\Template" name="head.additional" as="head.additional" template="Magento_Theme::html/container.phtml"/>
+</body>
+</handle><handle id="default"><body>
+   <block class="Magento\Framework\Pricing\Render" name="product.price.render.default">
+      <arguments>
+         <argument name="price_render_handle" xsi:type="string">catalog_product_prices</argument>
+         <argument name="use_link_for_as_low_as" xsi:type="boolean">true</argument>
+      </arguments>
+   </block>
 </body>
 </handle><handle id="empty"><body>
    <block class="Magento\Framework\Pricing\Render" name="product.price.render.default">
@@ -6894,6 +6894,17 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1689229090;s:6:"expire";i:9999999999;s:4:"t
    <referenceContainer name="cart.summary">
       <block class="Klarna\Onsitemessaging\Block\Cart" name="klarna.osm.cart" as="klarna_osm_cart" template="Klarna_Onsitemessaging::html/placement/cart.phtml" after="-"/>
    </referenceContainer>
+</body>
+</handle><handle id="mp_font_awesome"><head>
+   <css src="https://use.fontawesome.com/releases/v5.10.1/css/all.css" src_type="url"/>
+</head>
+</handle><handle id="default"><body>
+   <referenceContainer name="content">
+      <block class="Mageplaza\Smtp\Block\Script" name="mp.smtp.script" template="Mageplaza_Smtp::script.phtml" after="-"/>
+   </referenceContainer>
+</body>
+</handle><handle id="smtp_ace_email_quote_items" label="Email ACE Items List" design_abstraction="custom"><body>
+   <block class="Mageplaza\Smtp\Block\AbandonedCart" name="smtp.ace.quote.items" template="Mageplaza_Smtp::abandonedcart.phtml"/>
 </body>
 </handle><handle id="braintree_googlepay_review" layout="1column"><head>
    <title>Review Order</title>

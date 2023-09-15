@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05ba8e667f7ccee241fc7e157ba033a0",
+    "content-hash": "099b8b7e1c549e56504192d40ba5ef0d",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -15970,6 +15970,44 @@
                 "framework"
             ],
             "time": "2020-12-02T21:12:59+00:00"
+        },
+        {
+            "name": "mageplaza/module-core",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/module-core.git",
+                "reference": "ecd2f6862e5c46dd2e3f5c9ef8635dc1b6104917"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/module-core/zipball/ecd2f6862e5c46dd2e3f5c9ef8635dc1b6104917",
+                "reference": "ecd2f6862e5c46dd2e3f5c9ef8635dc1b6104917",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Mageplaza Core for Magento 2",
+            "time": "2023-07-18T02:05:19+00:00"
         },
         {
             "name": "monolog/monolog",

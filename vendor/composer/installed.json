@@ -19002,6 +19002,46 @@
         ]
     },
     {
+        "name": "mageplaza/module-core",
+        "version": "1.5.4",
+        "version_normalized": "1.5.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mageplaza/module-core.git",
+            "reference": "ecd2f6862e5c46dd2e3f5c9ef8635dc1b6104917"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mageplaza/module-core/zipball/ecd2f6862e5c46dd2e3f5c9ef8635dc1b6104917",
+            "reference": "ecd2f6862e5c46dd2e3f5c9ef8635dc1b6104917",
+            "shasum": ""
+        },
+        "time": "2023-07-18T02:05:19+00:00",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "Mageplaza\\Core\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "proprietary"
+        ],
+        "authors": [
+            {
+                "name": "Mageplaza",
+                "email": "support@mageplaza.com",
+                "homepage": "https://www.mageplaza.com",
+                "role": "Technical Support"
+            }
+        ],
+        "description": "Mageplaza Core for Magento 2"
+    },
+    {
         "name": "mikey179/vfsstream",
         "version": "v1.6.11",
         "version_normalized": "1.6.11.0",
